@@ -1,0 +1,3 @@
+[submodule "sub/DevEnvConfigurationFiles"]
+	path = sub/DevEnvConfigurationFiles
+	url = https://github.com/qfdevteam/DevEnvConfigurationFiles.git
