@@ -1,3 +1,6 @@
 [submodule "sub/DevEnvConfigurationFiles"]
 	path = sub/DevEnvConfigurationFiles
 	url = https://github.com/qfdevteam/DevEnvConfigurationFiles.git
+[submodule "sub/CSModule.Test"]
+	path = sub/CSModule.Test
+	url = https://github.com/qfdevteam/CSModule.Test.git
