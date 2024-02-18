@@ -1,4 +1,4 @@
-namespace CSModule.Email.EmailSender;
+namespace CSModule.Email;
 
 /// <summary>
 /// An email instance builder.

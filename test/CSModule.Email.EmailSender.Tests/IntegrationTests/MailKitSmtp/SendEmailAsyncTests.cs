@@ -1,3 +1,5 @@
+using CSModule.Email.EmailSender.MailKit;
+
 namespace CSModule.Email.EmailSender.Tests.IntegrationTests.MailKitSmtp;
 
 public class SendEmailAsyncTests : TestBase

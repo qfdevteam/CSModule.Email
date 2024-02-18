@@ -2,7 +2,7 @@ using System.Net;
 using MailKit.Net.Smtp;
 using MimeKit;
 
-namespace CSModule.Email.EmailSender;
+namespace CSModule.Email.EmailSender.MailKit;
 
 public class MailKitSmtpEmailSender(string host, int port, bool useSsl, ICredentials credentials) : IEmailSender
 {

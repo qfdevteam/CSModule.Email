@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\CSModule.Email\CSModule.Email.csproj" />
-    <ProjectReference Include="..\..\src\CSModule.Email.EmailSender\CSModule.Email.EmailSender.csproj" />
+    <ProjectReference Include="..\..\src\CSModule.Email.EmailSender.MailKit\CSModule.Email.EmailSender.MailKit.csproj" />
   </ItemGroup>
 
 </Project>
