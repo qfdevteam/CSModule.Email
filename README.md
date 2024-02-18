@@ -29,4 +29,4 @@ dotnet add package CSModule.Email
 
 ## Email Sender Implementations
 
-[MailKit Email Sender](./src/CSModule.Email.EmailSender.MailKit/README.md)
+[MailKit Email Sender](https://github.com/qfdevteam/CSModule.Email/blob/main/src/CSModule.Email.EmailSender.MailKit/README.md)

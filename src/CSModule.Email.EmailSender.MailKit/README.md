@@ -2,6 +2,10 @@
 
 ![NuGet Version](https://img.shields.io/nuget/v/CSModule.Email.EmailSender.MailKit)
 
+## Supplied as a part of common package
+
+[CSModule.Email](https://github.com/qfdevteam/CSModule.Email)
+
 ## NuGet package
 
 ```
