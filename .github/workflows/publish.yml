@@ -1,0 +1,27 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: 'recursive'
+        token: ${{ secrets.ACTION_PAT }}
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Pack CSModule.Email
+      run: dotnet pack ./src/CSModule.Email/CSModule.Email.csproj -o bin/Publish
+    - name: Pack CSModule.Email.EmailSender.MailKit
+      run: dotnet pack ./src/CSModule.Email.EmailSender.MailKit/CSModule.Email.EmailSender.MailKit.csproj -o bin/Publish
+    - name: Publish
+      run: dotnet nuget push ./bin/Publish/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
