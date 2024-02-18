@@ -26,6 +26,6 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       env:
-        TEST_EMAIL_SERVERS: ${{ vars.TEST_EMAIL_SERVERS }}
-        TEST_EMAIL_ADDRESSES: ${{ vars.TEST_EMAIL_ADDRESSES }}
+        TEST_EMAIL_SERVERS: ${{ secrets.TEST_EMAIL_SERVERS }}
+        TEST_EMAIL_ADDRESSES: ${{ secrets.TEST_EMAIL_ADDRESSES }}
       run: dotnet test --no-build --verbosity normal
